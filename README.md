@@ -25,7 +25,24 @@ $ docker-compose exec app ash
 
 ```
 
+[http://127.0.0.1:10080/](http://127.0.0.1:10080/)
+
 * `$ ...` はTerminalでの操作。
 
 * `/work # ...` はDockerコンテナ内での操作。
 
+
+---
+
+## 実行環境
+
+| | バージョン |
+|:--|:--|
+| Mac | |
+| Docker | 19.03.8 |
+| Docker-compose | 1.25.4 |
+| PHP | 7.3.16 |
+| Composer | 1.10.1 |
+| Laravel Framework | 6.18.3 |
+| Nginx | 1.17.9 |
+| MySQL | 8.0.19 |
