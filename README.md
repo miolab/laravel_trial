@@ -25,12 +25,17 @@ $ docker-compose exec app ash
 
 ```
 
-[http://127.0.0.1:10080/](http://127.0.0.1:10080/)
+[http://127.0.0.1:10080/](http://127.0.0.1:10080/) で確認
 
 * `$ ...` はTerminalでの操作。
 
 * `/work # ...` はDockerコンテナ内での操作。
 
+* コンテナやイメージをまとめて全削除
+
+  ```
+  $ docker-compose down --rmi all --volumes
+  ```
 
 ---
 
