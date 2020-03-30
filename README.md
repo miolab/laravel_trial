@@ -46,3 +46,129 @@ $ docker-compose exec app ash
 | Laravel Framework | 6.18.3 |
 | Nginx | 1.17.9 |
 | MySQL | 8.0.19 |
+
+
+## ディレクトリ構成
+
+```
+$ tree -L 3 .
+.
+├── README.md
+├── docker
+│   ├── mysql
+│   │   └── my.cnf
+│   ├── nginx
+│   │   └── default.conf
+│   └── php
+│       ├── Dockerfile
+│       └── php.ini
+├── docker-compose.yml
+├── logs
+│   ├── access.log
+│   ├── error.log
+│   ├── mysql-error.log
+│   ├── mysql-query.log
+│   ├── mysql-slow.log
+│   └── php-error.log
+└── src
+    ├── app
+    │   ├── Console
+    │   ├── Exceptions
+    │   ├── Http
+    │   ├── Providers
+    │   └── User.php
+    ├── artisan
+    ├── bootstrap
+    │   ├── app.php
+    │   └── cache
+    ├── composer.json
+    ├── composer.lock
+    ├── config
+    │   ├── app.php
+    │   ├── auth.php
+    │   ├── broadcasting.php
+    │   ├── cache.php
+    │   ├── database.php
+    │   ├── filesystems.php
+    │   ├── hashing.php
+    │   ├── logging.php
+    │   ├── mail.php
+    │   ├── queue.php
+    │   ├── services.php
+    │   ├── session.php
+    │   └── view.php
+    ├── database
+    │   ├── factories
+    │   ├── migrations
+    │   └── seeds
+    ├── package.json
+    ├── phpunit.xml
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.php
+    │   ├── robots.txt
+    │   └── web.config
+    ├── readme.md
+    ├── resources
+    │   ├── js
+    │   ├── lang
+    │   ├── sass
+    │   └── views
+    ├── routes
+    │   ├── api.php
+    │   ├── channels.php
+    │   ├── console.php
+    │   └── web.php
+    ├── server.php
+    ├── storage
+    │   ├── app
+    │   ├── framework
+    │   └── logs
+    ├── tests
+    │   ├── Bootstrap.php
+    │   ├── CreatesApplication.php
+    │   ├── Feature
+    │   ├── TestCase.php
+    │   └── Unit
+    ├── vendor
+    │   ├── autoload.php
+    │   ├── bin
+    │   ├── composer
+    │   ├── dnoegel
+    │   ├── doctrine
+    │   ├── dragonmantank
+    │   ├── egulias
+    │   ├── facade
+    │   ├── fideloper
+    │   ├── filp
+    │   ├── fzaninotto
+    │   ├── hamcrest
+    │   ├── jakub-onderka
+    │   ├── laravel
+    │   ├── league
+    │   ├── mockery
+    │   ├── monolog
+    │   ├── myclabs
+    │   ├── nesbot
+    │   ├── nikic
+    │   ├── nunomaduro
+    │   ├── opis
+    │   ├── paragonie
+    │   ├── phar-io
+    │   ├── phpdocumentor
+    │   ├── phpoption
+    │   ├── phpspec
+    │   ├── phpunit
+    │   ├── psr
+    │   ├── psy
+    │   ├── ramsey
+    │   ├── scrivo
+    │   ├── sebastian
+    │   ├── swiftmailer
+    │   ├── symfony
+    │   ├── theseer
+    │   ├── tijsverkoyen
+    │   ├── vlucas
+    │   └── webmozart
+    └── webpack.mix.js
+```
