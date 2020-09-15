@@ -26,3 +26,4 @@ Homestead.json
 logs/
 test_nginx/
 _memo
+.DS_Store
